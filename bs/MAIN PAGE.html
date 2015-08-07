@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- testing out gitHib-->
+
 <head>
 
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Vote Canvas</title>
+    <title>Vote Tek</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -275,19 +275,56 @@ footer {
 
 </head>
 
-<body> 
+<!--<body> 
+<div class="container">
+  <div class="form-group">
+		<h4>Enter Access Code: </h4> <input type = "text"  id= "pwd" required >
+		<br><br>
+		<button id= "button" onClick= "checkCode()"> Submit </button> 
+
+		-->
+	<script>
+	function checkCode(){
+		var adminCode = "0000";
+		var userCode ="1212"
+		//var accessCode = {"code":"code"};
+		var code = document.getElementById("pwd").value;
+		
+		
+		if (code== adminCode){
+			window.location.href = "adminPage.html";
+		}
+		else if(code == userCode){ // if code in dictionary
+			//accessCode.push(code);
+			window.location.href = "votingimportanceemail.html";
+			//go to login page	
+		}
+		
+		else{ //if code not in dict
+			alert("That access code is not valid. Your access code should be on the back of your ticket!");
+			
+			
+		}
+	}
+
+	</script>
+	</div>
+</div>
   <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>VoteTek</h1>
-			<h2>Have an Access Code?</h2>
-            <div class="container">
-  <div class="form-group">
-   <input type="password" class="accesscode" class="form-control" id="pwd" placeholder="Enter Access Code">
-    </div>
-   <button type="Enter" class="btn btn-default">Enter</button>
-  </form>
-  <p class="sp">Would You Like to use VoteTek for Your Next Event? <a target="_blank" href="SIGN UP PAGE.HTML">Click Here To Sign Up!</a></p>
+			
+			<div class="container">
+			<div class="form-group">
+				<h4>Enter Access Code: </h4> <input type = "text"  id= "pwd" required >
+				<br><br>
+				<button id= "button" onClick= "checkCode()"> Submit </button> 
+			</div>
+			</div>
+   
+
+  <p class="sp">Would You Like to use VoteTek for Your Next Event? <a target="_blank" href="SIGN UP (ORGANIZATION).HTML">Click Here To Sign Up!</a></p>
     </header>
 	
 	 

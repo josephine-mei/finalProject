@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Voting Importance</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +24,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	
+	
+	
+	
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -67,6 +71,46 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>About Section</h1>
+					var emailDict = {}; // create an empty array
+var newsletterDIct = {};
+/*
+function CreateEmailLogin(email) {
+	if (!(email) in obj){
+		emailDict[email.key].push(email.val);	
+		}
+	}
+	else {
+		return;
+	}
+};
+	
+emailDict = {};
+CreateEmailLogin(input);
+*/
+
+function TextboxFunctionality(text){
+    var TheTextBox = document.getElementById("email");
+	if (!(email) in obj){
+		emailDict[email.key].push(email.val);	
+}
+
+function SubmitFunctionality(){
+	document.getElementById("submit").innerHTML = window.location = "success.html"; // Redirecting to other page.
+}
+
+function CheckBoxFunctionality(){
+	if (!(email) in obj){
+		newsletterDict.push({email: email, email: email});
+	}
+	else {
+		return;
+}
+
+TextboxFunctionality();
+SubmitFunctionality();
+CheckBoxFunctionality();
+
+
                 </div>
             </div>
         </div>

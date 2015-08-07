@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- testing out gitHib-->
 <head>
 
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ballot Page</title>
+    <title>Welcome To The Administrator Page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -275,14 +275,55 @@ footer {
 
 </head>
 
-<body> 
+<!--<body> 
+<div class="container">
+  <div class="form-group">
+		<h4>Enter Access Code: </h4> <input type = "text"  id= "pwd" required >
+		<br><br>
+		<button id= "button" onClick= "checkCode()"> Submit </button> 
+
+		-->
+	<script>
+	function checkCode(){
+		var adminCode = "0000";
+		var accessCode = {"code":"code"};
+		var code = document.getElementById("pwd").value;
+		
+		
+		if (code== adminCode){
+			window.location.href = "adminPage.html";
+		}
+		else if(code in accessCode){ // if code in dictionary
+			accessCode.push(code);
+			window.location.href = "Voting Importance.html";
+			//go to login page	
+		}
+		
+		else{ //if code not in dicts
+			alert("That access code is not valid. Your access code should be on the back of your ticket!");
+			
+			
+		}
+	}
+
+	</script>
+	</div>
+</div>
   <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>Why Voting Matters</h1>
-			<h2>Movie Number 1</h2>
-            
-  
+            <h1>Admin Page</h1>
+			
+			<div class="container">
+			<div class="form-group">
+				<h4> Enter Movie Title</h4> <input type = "text"  id= "pwd" required >
+				<br><br>
+				<button id= "button" onClick= "checkCode()"> Submit </button> 
+			</div>
+			</div>
+   
+
+ 
     </header>
 	
 	 
